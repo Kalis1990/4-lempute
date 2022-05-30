@@ -1,0 +1,13 @@
+header .menu{
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    
+    
+
+}
+header{
+    width: 1000px;
+    position: relative;
+
+}
