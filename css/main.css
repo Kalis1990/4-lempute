@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    width: 100%;
 }
 
 header .menu{
@@ -12,7 +13,6 @@ header .menu{
 }
 header{
     display: inline-block;
-    width: 100%;
     height: 150px;
 
 }
@@ -22,47 +22,71 @@ header{
     justify-content: space-between;
 } */
 main{
-    display: inline-block;
-    margin-top: 0;
-    justify-content: space-between;
+    width: 1000px;
+    margin: 0 calc(50% - 500px);
+    box-sizing: border-box;
+    display: flex;
 
 }
-main div{
-    margin-top: 0;
-    float: left;
+
+.bulb{
     width: 40%;
-    
+    float: left;
+
 }
-main div .img{
+.bulb img {
+    display: block;
     width: 300px;
     height: 300px;
-    margin-left: 40%;
-
+    margin: 0 calc(50% - 150px);
 }
-main .text{
-    width: 50%;
+
+div.text{
+    width: 60%;
     float: right;
     font-family: sans-serif;
 }
-main h1.text{
+.text h1{
     color:blue;
-    font-size: 140px;
+    font-size: 170px;
     margin-top: 0;
     margin-bottom: 0;  
 }
-main h2.text{
+.text h2{
     color:black;
     font-size: 15px;
     margin-bottom: 0;
     font-weight: bold;
 }
-main h3.text{
+.text h3{
     color:silver;
     font-size: 12px;
-    margin-bottom: 0;
 }
-main div.home-button{
-    margin-left: 50%;
-    display: inline-block;
-    
+footer{
+    width: 1000px;
+    margin: 0 calc(50% - 500px);
 }
+footer .home-button{
+    float:right;
+    cursor: pointer;
+}
+footer .arrow{
+    float:right;
+    margin-right: 42%;
+    padding: 9px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .bulb {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .text {
+      flex: 100%;
+      max-width: 100%;
+      
+    }
+  }
